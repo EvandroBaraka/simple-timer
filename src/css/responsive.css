@@ -1,0 +1,19 @@
+@media (max-width: 375px) {
+    body {
+        width: 100vw;
+    }
+
+    header {
+        padding-right: 15px;
+    }
+
+    .clock-container span {
+        font-size: 4.5em;
+    }
+
+    .input-timer {
+    height: 70px;
+    width: 70px;
+    font-size: 4.5em;
+}
+}

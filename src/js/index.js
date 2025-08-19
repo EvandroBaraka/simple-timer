@@ -5,7 +5,7 @@ const inputSecond = document.getElementById('second')
 const buttonStart = document.getElementById('start')
 const buttonPause = document.getElementById('pause')
 const buttonReset = document.getElementById('reset')
-const buttonDarkmode = document.getElementById('btn-darkmode')
+const buttonDarkmode = document.getElementById('btn-toggler')
 const itensDarkmode = document.querySelectorAll('.darkmode')
 
 var counter //Inicializa a variável que recebe o timer para ser usada em outras funções

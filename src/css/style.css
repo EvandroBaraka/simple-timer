@@ -25,7 +25,7 @@ header {
     padding-right: 30px;
 }
 
-.container-darkmode {
+.theme-toggler {
     width: 61px;
     height: 32px;
     background-color: gray;
@@ -38,7 +38,7 @@ header {
     }
 }
 
-#btn-darkmode {
+#btn-toggler {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -128,13 +128,15 @@ header {
 .darkmode {
     background-color: #191622;
     color: #67E480;
+    transition: ease-in-out 0.2s;
 }
 
 .lightmode {
     background-color: #cac2e1;
     color: #08120a;
+    transition: ease-in-out 0.2s;
 
-    &#btn-darkmode {
+    &#btn-toggler {
         translate: 30px;
     }
 }

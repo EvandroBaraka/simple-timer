@@ -14,6 +14,15 @@ body {
     justify-content: center;
 }
 
+body,
+.clock-container,
+button {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+
 header {
     height: 60px;
     width: 100%;
@@ -48,16 +57,20 @@ header {
 
 .clock-container {
     display: flex;
-
-    span {
-        font-size: 7em;
-        font-family: 'Digital-7';
-        font-weight: 700;
-    }
+    background-color: #19162248;
+    border-radius: 20px;
+    padding: 10px 30px;
 }
 
-.input-timer {
-    background: none;
+#separator {
+    background: transparent;
+    font-size: 7em;
+    font-family: 'Digital-7';
+    font-weight: 700;
+}
+
+#hour, #minute, #second {
+    background: transparent;
     height: 120px;
     width: 120px;
     font-size: 7em;
@@ -75,8 +88,8 @@ header {
 }
 
 #start {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     border: none;
     background: none;
     background-image: url('../img/play.png');
@@ -87,13 +100,13 @@ header {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.06);        
+        transform: scale(1.08);        
     }
 }
 
 #pause {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: none;
     background: none;
     background-image: url('../img/pause.png');
@@ -104,13 +117,13 @@ header {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.06);       
+        transform: scale(1.08);       
     }
 }
 
 #reset {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border: none;
     background: none;
     background-image: url('../img/reset.png');
@@ -121,7 +134,7 @@ header {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.06);      
+        transform: scale(1.08);      
     }
 }
 
@@ -139,4 +152,14 @@ header {
     &#btn-toggler {
         translate: 30px;
     }
+}
+
+@keyframes pulseFinish {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.timer-finish {
+  animation: pulseFinish 0.6s ease-in-out 3;
 }

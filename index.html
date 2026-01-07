@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,35 @@
     <link rel="stylesheet" href="./src/css/responsive.css">
     <title>Timer</title>
 </head>
-<body class="darkmode">
+
+<body id="body-fog" class="darkmode">
     <header>
         <div class="theme-toggler">
             <img src="./src/img/sol.png" alt="sun">
-            <button class="darkmode" id="btn-toggler">o</button>
+            <button class="darkmode" id="btn-toggler" tabindex="-1">o</button>
             <img src="./src/img/lua.png" alt="moon">
         </div>
     </header>
     <div class="clock-container">
-        <input type="text" inputmode="numeric" data-type="hour" class="input-timer darkmode" id="hour" value="00" maxlength="2">
-        <span class="darkmode">:</span>
-        <input type="text" inputmode="numeric" data-type="minute" class="input-timer darkmode" id="minute" value="00" maxlength="2">
-        <span class="darkmode">:</span>
-        <input type="text" inputmode="numeric" data-type="second" class="input-timer darkmode" id="second" value="00" maxlength="2">
+        <input type="text" inputmode="numeric" data-type="hour" class="input-timer darkmode" id="hour" value="00"
+            maxlength="2">
+        <span class="darkmode" id="separator">:</span>
+        <input type="text" inputmode="numeric" data-type="minute" class="input-timer darkmode" id="minute" value="00"
+            maxlength="2">
+        <span class="darkmode" id="separator">:</span>
+        <input type="text" inputmode="numeric" data-type="second" class="input-timer darkmode" id="second" value="00"
+            maxlength="2">
     </div>
 
     <div class="btn-container">
-        <input type="button" value="" id="start">
-        <input type="button" value="" id="pause">
-        <input type="button" value="" id="reset">
+        <input type="button" value="" id="start" title="Start">
+        <input type="button" value="" id="pause" title="Pause">
+        <input type="button" value="" id="reset" title="Reset">
     </div>
 
-    <script src="./src/js/index.js"></script>
+    <script src="./src/js/fog/three.r134.min.js"></script>
+    <script src="./src/js/fog/vanta.fog.min.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
 </body>
+
 </html>

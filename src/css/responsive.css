@@ -1,4 +1,4 @@
-@media (max-width: 465px) {
+@media (max-width: 540px) {
     body {
         width: 100vw;
     }
@@ -7,13 +7,13 @@
         padding-right: 15px;
     }
 
-    .clock-container span {
+    #separator {
         font-size: 4.5em;
     }
 
-    .input-timer {
-    height: 70px;
-    width: 70px;
-    font-size: 4.5em;
-}
+    #hour, #minute, #second {
+        height: 70px;
+        width: 70px;
+        font-size: 4.5em;
+    }
 }
